@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Document
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
+    body
+        .container
+            section.info
+                h1.info_title Hello, Friend!
+                h2.info_about Enter your personal details and start journey with us
+            section.data
+                h2.data_title Inicia Sesion
+
+
+                form(action="#" method="POST")
+                    //- <i class="material-icons prefix">account_circle</i>
+                    //- label(for="user") Usuario
+                    input.input.input_user#user(type="email", name="user" placeholder="Usuario") 
+
+                    //- label(for="password") Contraseña
+                    input.input.input_pass#password(type="password", name="pass" placeholder="Contraseña")
+
+                    button.input.input_submit Entrar
+
+                a.input_forget(href="#") Olvidaste tu contraseña?
+

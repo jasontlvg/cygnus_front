@@ -1,0 +1,32 @@
+.container{
+    height: 100vh;
+    display: flex;
+
+    &__info_section{
+        width: 30%;
+        background: yellowgreen;
+    }
+
+    &__form_section{
+        background: skyblue;
+        width: 70%;
+
+        &__form{
+            //@at-root
+            padding: 2em 4em;
+
+            &__name_container{
+                // background: red;    
+                display: flex;
+                justify-content: space-around;
+                &__data{
+                    display: flex;
+                    flex-direction: column;
+                }
+
+            }
+        }
+    }
+    
+}
+

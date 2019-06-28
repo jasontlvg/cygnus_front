@@ -1,0 +1,26 @@
+.info{
+    width: 40%;
+    background: linear-gradient(to right, #FF4B2B, #FF416C);    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    color: white;
+    padding: 1em;
+
+    &_title{
+        // background: blue;
+        
+    }
+
+    &_about{
+        // background: blue;
+        text-align: center;
+        font-size: 14px;
+        // font-weight: 100;
+        // letter-spacing: 0.5px;
+    }
+
+    &_submit{
+        background-color: #FF4B2B;
+    }
+}
