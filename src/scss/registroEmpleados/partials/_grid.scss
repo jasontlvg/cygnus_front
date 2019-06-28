@@ -1,5 +1,12 @@
+
+
+
 *{
     box-sizing: border-box;
+    // font-family: 'B612', sans-serif;
+    font-family: 'Muli', sans-serif;
+
+
 }
 .container{
     height: 100vh;
@@ -22,7 +29,7 @@
         &__form{
             &__container_input{
                 display: flex;
-                margin-bottom: 0.8em;
+                margin-bottom: 1.4em;
                 align-items: center;
                 &__title{
                     width: 10em;
@@ -45,8 +52,9 @@
                         justify-content: space-between;
                         flex: 1 1 auto;
                         input{
-                            width: 12em;
-                            line-height: 3em;
+                            width: 9.6em;
+                            // line-height: 1.5em;
+                            padding: 0.5em;
                         }
                     }
 
@@ -56,7 +64,7 @@
                     
                     &__input{
                         // padding: 1em;
-                        line-height: 2em;
+                        padding: 0.5em;
                     }
 
                 }
@@ -65,7 +73,7 @@
                     // background: red;
                     &__input{
                         width: 30em;
-                        line-height: 3em;
+                        padding: 0.5em;
                         // background: red;
                     }
                 }
