@@ -1,6 +1,10 @@
+*{
+    box-sizing: border-box;
+}
 .container{
     height: 100vh;
     display: flex;
+
 
     &__info_section{
         width: 30%;
@@ -8,20 +12,62 @@
     }
 
     &__form_section{
-        background: skyblue;
+        // background: tomato;
         width: 70%;
+        // padding: 5em;
+        display: flex;  
+        justify-content: center;
+        align-items: center;
 
         &__form{
-            //@at-root
-            padding: 2em 4em;
-
-            &__name_container{
-                // background: red;    
+            &__container_input{
                 display: flex;
-                justify-content: space-around;
-                &__data{
+                margin-bottom: 0.8em;
+                align-items: center;
+                &__title{
+                    width: 10em;
+                    // background: tomato;
+                    // text-align: right;
+                }
+                
+                &--name{
                     display: flex;
-                    flex-direction: column;
+                    align-items: center;
+
+                    &__title{
+                        font-size: 1em;
+                        font-style: normal;
+                        margin: 0;
+                    }
+
+                    &__inputs{
+                        display: flex;
+                        justify-content: space-between;
+                        flex: 1 1 auto;
+                        input{
+                            width: 12em;
+                            line-height: 3em;
+                        }
+                    }
+
+                }
+
+                &--edad{
+                    
+                    &__input{
+                        // padding: 1em;
+                        line-height: 2em;
+                    }
+
+                }
+
+                &--email{
+                    // background: red;
+                    &__input{
+                        width: 30em;
+                        line-height: 3em;
+                        // background: red;
+                    }
                 }
 
             }

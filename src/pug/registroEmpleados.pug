@@ -11,21 +11,65 @@ html(lang="en")
 
             section.container__form_section
                 form.container__form_section__form(action="")
-                    .container__form_section__form__name_container
-                        h2 Datos
-                        .container__form_section__form__name_container__data.container__form_section__form__name_container__data--nombre
-                            //- label(for="nombre") Nombre
-                            input#nombre(type="text", name="" placeholder="Nombre")
-                        .container__form_section__form__name_container__data.container__form_section__form__name_container__data--paterno
-                            //- label(for="") Apellido Paterno
+                    .container__form_section__form__container_input.container__form_section__form__container_input--name
+                        h2.container__form_section__form__container_input__title.container__form_section__form__container_input--name__title Datos
+                        .container__form_section__form__name_container__inputs.container__form_section__form__container_input--name__inputs
+                            input(type="text", name="" placeholder="Nombre/s")
                             input(type="text", placeholder="Apellido Paterno")
-
-                        .container__form_section__form__name_container__data.container__form_section__form__name_container__data--materno
-                            //- label(for="") Apellido Materno
                             input(type="text", name="" placeholder="Apellido Materno")
+                    
+                    .container__form_section__form__container_input.container__form_section__form__container_input--cargo
+                        label.container__form_section__form__container_input__title.container__form_section__form__container_input--cargo__title(for="cargo") Cargo
+                        select.container__form_section__form__container_input__select.container__form_section__form__container_input--cargo__select(name="")
+                            option Alabama
+                            option Alabama
+                            option Alabama
+                            option Alabama
+                            option Alabama
+                    
+                    .container__form_section__form__container_input.container__form_section__form__container_input--edad
+                        label.container__form_section__form__container_input__title.container__form_section__form__container_input--edad__title(for="edad") Edad
+                        input#edad.container__form_section__form__container_input--edad__input(type="number", name="")
+                    
+                    .container__form_section__form__container_input.container__form_section__form__container_input--sexo
+                        label.container__form_section__form__container_input__title.container__form_section__form__container_input--sexo__title(for="sexo") Sexo
+                        select.container__form_section__form__container_input__select.container__form_section__form__container_input--sexo__select(name="")
+                            option Alabama
+                            option Alabama
+                            option Alabama
+                            option Alabama
+                            option Alabama
 
-                    //- label(for="") Cargo
-                    //- input(type="text", name="")
+                    .container__form_section__form__container_input.container__form_section__form__container_input--jornada
+                        label.container__form_section__form__container_input__title.container__form_section__form__container_input--jornada__title(for="jornada") Jornada
+                        select.container__form_section__form__container_input__select.container__form_section__form__container_input--jornada__select(name="")
+                            option Alabama
+                            option Alabama
+                            option Alabama
+                            option Alabama
+                            option Alabama
+                    
+                    .container__form_section__form__container_input.container__form_section__form__container_input--escolaridad
+                        label.container__form_section__form__container_input__title.container__form_section__form__container_input--escolaridad__title(for="escolaridad") Escolaridad
+                        select.container__form_section__form__container_input__select.container__form_section__form__container_input--escolaridad__select(name="")
+                            option Alabama
+                            option Alabama
+                            option Alabama
+                            option Alabama
+                            option Alabama
+
+                    .container__form_section__form__container_input.container__form_section__form__container_input--email
+                        label.container__form_section__form__container_input__title.container__form_section__form__container_input--email__title(for="email") Email
+                        input#email.container__form_section__form__container_input--email__input(type="email", name="")
+
+                    .container__form_section__form__container_input.container__form_section__form__container_input--departamento
+                        label.container__form_section__form__container_input__title.container__form_section__form__container_input--departamento__title(for="departamento") Departamento
+                        select.container__form_section__form__container_input__select.container__form_section__form__container_input--departamento__select(name="")
+                            option Alabama
+                            option Alabama
+                            option Alabama
+                            option Alabama
+                            option Alabama
 
                     //- label(for="") Edad
                     //- input(type="text", name="")
@@ -44,3 +88,5 @@ html(lang="en")
 
                     //- label(for="") Departamento
                     //- input(type="text", name="")
+
+                    
