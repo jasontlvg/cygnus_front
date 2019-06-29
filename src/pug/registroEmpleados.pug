@@ -4,66 +4,73 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
-        <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
         title Document
     body
         .container
-            section.container__info_section
-
-            section.container__form_section
-                form.container__form_section__form(action="")
-                    .container__form_section__form__container_input.container__form_section__form__container_input--name
-                        h2.container__form_section__form__container_input__title.container__form_section__form__container_input--name__title Datos
-                        .container__form_section__form__name_container__inputs.container__form_section__form__container_input--name__inputs
-                            input(type="text", name="" placeholder="Nombre/s")
-                            input(type="text", placeholder="Apellido Paterno")
-                            input(type="text", name="" placeholder="Apellido Materno")
+            section.info_section
+                
+            section.form_section
+                form.formSection__form(action="")
+                    .formSection__form__formGroup.formSection__form__formGroup--datos
+                        label.formSection__form__formGroup__title.formSection__form__formGroup--datos__title Datos
+                        .formSection__form__formGroup__inputContainer.formSection__form__formGroup--datos__inputContainer
+                            input.formSection__form__formGroup__inputContainer__input.formSection__form__formGroup--datos__inputContainer__input(type="text" class="form-control" id="" aria-describedby="" placeholder="Nombre/s")
+                            input.formSection__form__formGroup__inputContainer__input.formSection__form__formGroup--datos__inputContainer__input(type="text" class="form-control" id="" aria-describedby="" placeholder="A. Paterno")
+                            input.formSection__form__formGroup__inputContainer__input.formSection__form__formGroup--datos__inputContainer__input(type="text" class="form-control" id="" aria-describedby="" placeholder="A. Materno")
+                    .formSection__form__formGroup.formSection__form__formGroup--edad
+                        label.formSection__form__formGroup__title.formSection__form__formGroup--edad__title Edad
+                        .formSection__form__formGroup__inputContainer.formSection__form__formGroup--edad__inputContainer
+                            input.formSection__form__formGroup__inputContainer__input.formSection__form__formGroup--edad__inputContainer__input(type="number" class="form-control" name="")                    
+                    .formSection__form__formGroup.formSection__form__formGroup--sexo
+                        label.formSection__form__formGroup__title.formSection__form__formGroup--sexo__title Sexo
+                        .formSection__form__formGroup__inputContainer.formSection__form__formGroup--sexo__inputContainer                        
+                            select.formSection__form__formGroup__inputContainer__input.formSection__form__formGroup--sexo__inputContainer__input(name="" class="custom-select")
+                                option Masculino
+                                option Femenino
+                    .formSection__form__formGroup.formSection__form__formGroup--email
+                        label.formSection__form__formGroup__title.formSection__form__formGroup--email__title Email
+                        .formSection__form__formGroup__inputContainer.formSection__form__formGroup--email__inputContainer
+                            input.formSection__form__formGroup__inputContainer__input.formSection__form__formGroup--email__inputContainer__input(type="email" class="form-control" id="exampleInputPassword1" placeholder="")
                     
-                    .container__form_section__form__container_input.container__form_section__form__container_input--cargo
-                        label.container__form_section__form__container_input__title.container__form_section__form__container_input--cargo__title(for="cargo") Cargo
-                        select.container__form_section__form__container_input__select.container__form_section__form__container_input--cargo__select(name="")
-                            option Masculino
-                            option Femenino
-                    
-                    .container__form_section__form__container_input.container__form_section__form__container_input--edad
-                        label.container__form_section__form__container_input__title.container__form_section__form__container_input--edad__title(for="edad") Edad
-                        input#edad.container__form_section__form__container_input--edad__input(type="number", name="")
-                    
-                    .container__form_section__form__container_input.container__form_section__form__container_input--sexo
-                        label.container__form_section__form__container_input__title.container__form_section__form__container_input--sexo__title(for="sexo") Sexo
-                        select.container__form_section__form__container_input__select.container__form_section__form__container_input--sexo__select(name="")
-                            option Masculino
-                            option Femenino
+                    .formSection__form__formGroup.formSection__form__formGroup--cargo
+                        label.formSection__form__formGroup__title.formSection__form__formGroup--cargo__title Cargo
+                        .formSection__form__formGroup__inputContainer.formSection__form__formGroup--cargo__inputContainer
+                            select.formSection__form__formGroup__inputContainer__input.formSection__form__formGroup--cargo__inputContainer__input(name="" class="custom-select")
+                                option Masculino
+                                option Femenino                    
+                                option Masculino
+                                option Femenino
 
-                    .container__form_section__form__container_input.container__form_section__form__container_input--jornada
-                        label.container__form_section__form__container_input__title.container__form_section__form__container_input--jornada__title(for="jornada") Jornada
-                        select.container__form_section__form__container_input__select.container__form_section__form__container_input--jornada__select(name="")
-                            option Alabama
-                            option Alabama
-                            option Alabama
-                            option Alabama
-                            option Alabama
+                    .formSection__form__formGroup.formSection__form__formGroup--jornada
+                        label.formSection__form__formGroup__title.formSection__form__formGroup--jornada__title Jornada
+                        .formSection__form__formGroup__inputContainer.formSection__form__formGroup--jornada__inputContainer
+                            select.formSection__form__formGroup__inputContainer__input.formSection__form__formGroup--jornada__inputContainer__input(name="" class="custom-select")
+                                option Diurna
+                                option Nocturna                    
+                                option Mixta                    
+                    .formSection__form__formGroup.formSection__form__formGroup--escolaridad
+                        label.formSection__form__formGroup__title.formSection__form__formGroup--escolaridad__title Escolaridad
+                        .formSection__form__formGroup__inputContainer.formSection__form__formGroup--escolaridad__inputContainer
+                            select.formSection__form__formGroup__inputContainer__input.formSection__form__formGroup--escolaridad__inputContainer__input(name="" class="custom-select")
+                                option Primaria
+                                option Secundaria                    
+                                option Preparatoria                       
+                                option Técnica                       
+                                option Universidad                       
+                                option Especialización                       
+                                option Doctorado                       
+                                option Maestría                       
+                    .formSection__form__formGroup.formSection__form__formGroup--departamento
+                        label.formSection__form__formGroup__title.formSection__form__formGroup--departamento__title Departamento
+                        .formSection__form__formGroup__inputContainer.formSection__form__formGroup--departamento__inputContainer
+                            select.formSection__form__formGroup__inputContainer__input.formSection__form__formGroup--departamento__inputContainer__input(name="" class="custom-select")
+                                option Primaria
+                                option Secundaria                    
+                                option Preparatoria
                     
-                    .container__form_section__form__container_input.container__form_section__form__container_input--escolaridad
-                        label.container__form_section__form__container_input__title.container__form_section__form__container_input--escolaridad__title(for="escolaridad") Escolaridad
-                        select.container__form_section__form__container_input__select.container__form_section__form__container_input--escolaridad__select(name="")
-                            option Alabama
-                            option Alabama
-                            option Alabama
-                            option Alabama
-                            option Alabama
-
-                    .container__form_section__form__container_input.container__form_section__form__container_input--email
-                        label.container__form_section__form__container_input__title.container__form_section__form__container_input--email__title(for="email") Email
-                        input#email.container__form_section__form__container_input--email__input(type="email", name="")
-
-                    .container__form_section__form__container_input.container__form_section__form__container_input--departamento
-                        label.container__form_section__form__container_input__title.container__form_section__form__container_input--departamento__title(for="departamento") Departamento
-                        select.container__form_section__form__container_input__select.container__form_section__form__container_input--departamento__select(name="")
-                            option Alabama
-                            option Alabama
-                            option Alabama
-                            option Alabama
-                            option Alabama
-
                     
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

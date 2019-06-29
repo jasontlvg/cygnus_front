@@ -1,86 +1,74 @@
 
 
-
-*{
-    box-sizing: border-box;
-    // font-family: 'B612', sans-serif;
-    font-family: 'Muli', sans-serif;
-
-
-}
 .container{
-    height: 100vh;
     display: flex;
+}
 
+.info_section{
+    width: 35%;
+    height: 100vh;
+    background: #ffd500;
+}
 
-    &__info_section{
-        width: 30%;
-        background: yellowgreen;
-    }
-
-    &__form_section{
-        // background: tomato;
-        width: 70%;
-        // padding: 5em;
-        display: flex;  
-        justify-content: center;
-        align-items: center;
-
-        &__form{
-            &__container_input{
-                display: flex;
-                margin-bottom: 1.4em;
-                align-items: center;
-                &__title{
-                    width: 10em;
-                    // background: tomato;
-                    // text-align: right;
-                }
-                
-                &--name{
-                    display: flex;
-                    align-items: center;
-
-                    &__title{
-                        font-size: 1em;
-                        font-style: normal;
-                        margin: 0;
-                    }
-
-                    &__inputs{
-                        display: flex;
-                        justify-content: space-between;
-                        flex: 1 1 auto;
-                        input{
-                            width: 9.6em;
-                            // line-height: 1.5em;
-                            padding: 0.5em;
-                        }
-                    }
-
-                }
-
-                &--edad{
-                    
-                    &__input{
-                        // padding: 1em;
-                        padding: 0.5em;
-                    }
-
-                }
-
-                &--email{
-                    // background: red;
-                    &__input{
-                        width: 30em;
-                        padding: 0.5em;
-                        // background: red;
-                    }
-                }
-
-            }
-        }
-    }
+.form_section{
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // padding: 0 5em;
     
 }
 
+.formSection__form{ // -- Esto esta dentro de .form_section
+    // background: red;
+    // display: none;
+    width: 85%;  //------
+    &__formGroup{
+        width: 100%;
+        display: flex;
+        margin-bottom: 1em;
+        // background: red;
+        // flex-wrap: wrap;
+
+        &__title{
+            width: 15%;
+            margin: 0;
+        }
+
+        &__inputContainer{
+            width: 85%;
+            // background: green;
+            &__input{
+                // background: green;
+                width: 13em;
+            }
+        }
+        
+        &--datos{ 
+            
+            flex-wrap: nowrap;
+            
+            &__title{
+                // color: red;
+                // width: 10em;
+                // background: red;
+            }
+            
+            &__inputContainer{
+                display: flex;
+                justify-content: space-between;
+                // background: blue;
+                &__input{
+                    width: 13em;
+                }
+            }
+        }
+
+        &--edad{
+            input{
+                // background: blue;
+            }
+        }
+        
+    }
+}
