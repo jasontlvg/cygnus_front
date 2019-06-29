@@ -1,4 +1,4 @@
-
+$widthInput: 12em;
 
 .container{
     display: flex;
@@ -22,7 +22,7 @@
 .formSection__form{ // -- Esto esta dentro de .form_section
     // background: red;
     // display: none;
-    width: 85%;  //------
+    width: 70%;  //------
     &__formGroup{
         width: 100%;
         display: flex;
@@ -31,16 +31,18 @@
         // flex-wrap: wrap;
 
         &__title{
-            width: 15%;
+            display: flex;
+            align-items: center;
+            width: 20%;
             margin: 0;
         }
 
         &__inputContainer{
-            width: 85%;
+            width: 80%;
             // background: green;
             &__input{
                 // background: green;
-                width: 13em;
+                width: $widthInput;
             }
         }
         
@@ -58,8 +60,16 @@
                 display: flex;
                 justify-content: space-between;
                 // background: blue;
+
+                
                 &__input{
-                    width: 13em;
+                    // width: $widthInput;
+                    width: 9em;
+                    // background: red;
+                    &:first-child{
+                        // background: green;
+                        width: $widthInput;
+                    }
                 }
             }
         }
